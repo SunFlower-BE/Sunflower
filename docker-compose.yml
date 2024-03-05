@@ -7,15 +7,15 @@ services:
     ports:
       - "8081:8080"
     environment:
-      app.auth.refreshTokenExpiry: ${app.auth.refreshTokenExpiry}
-      app.auth.refreshTokenSecret: ${app.auth.refreshTokenSecret}
-      app.auth.tokenExpiry: ${app.auth.tokenExpiry}
-      app.auth.tokenSecret: ${app.auth.tokenSecret}
-      cloud.aws.credentials.access-key: ${cloud.aws.credentials.access-key}
-      cloud.aws.credentials.secret-key: ${cloud.aws.credentials.secret-key}
-      cloud.aws.s3.restaurant-bucket: ${cloud.aws.s3.restaurant-bucket}
-      cloud.aws.s3.review-img: ${cloud.aws.s3.review-img}
-      cloud.aws.s3.user-bucket: ${cloud.aws.s3.user-bucket}
+      REFRESH-TOKEN-EXPIRY: ${REFRESH-TOKEN-EXPIRY}
+      REFRESH-TOKEN-SECRET: ${REFRESH-TOKEN-SECRET}
+      TOKEN-EXPIRY: ${TOKEN-EXPIRY}
+      TOKEN-SECRET: ${TOKEN-SECRET}
+      ACCESS-KEY: ${ACCESS-KEY}
+      SECRET-KEY: ${SECRET-KEY}
+      RESTAURANT-BUCKET: ${RESTAURANT-BUCKET}
+      REVIEW_IMG: ${REVIEW_IMG}
+      USER_BUCKET: ${USER_BUCKET}
       MARIADB_NAME: ${MARIADB_NAME}
       MARIADB_PASSWORD: ${MARIADB_PASSWORD}
       MARIADB_URL: ${MARIADB_URL}
