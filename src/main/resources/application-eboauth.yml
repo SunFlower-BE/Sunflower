@@ -1,6 +1,6 @@
 app:
   auth:
     tokenSecret: ${TOKEN-SECRET}
-    tokenExpiry: ${TOKEN-EXPIRY}
-    refreshTokenExpiry: ${REFRESH-TOKEN-EXPIRY}
+    tokenExpiry: 1800000
+    refreshTokenExpiry: 1209600000
     refreshTokenSecret: ${REFRESH-TOKEN-SECRET}
