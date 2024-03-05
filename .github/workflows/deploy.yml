@@ -25,8 +25,8 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
-          distribution: 'temurin'
+          java-version: '17'
+          distribution: 'adopt'
 
       # 환경 변수 설정
       - name: Set up Environment
@@ -104,6 +104,3 @@ jobs:
             chmod 777 ./deploy.sh
             ./deploy.sh
             docker image prune -f
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
