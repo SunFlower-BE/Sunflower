@@ -83,7 +83,7 @@ public class MemberService {
                             .memberEmail(memberSaveDto.getEmail())
                             .memberPassword(encPassword)
                             .memberNickname(memberSaveDto.getNickName())
-                            .memberProfilePicture(defaultMemberImage)
+                            .memberProfilePicture("image")
                             .memberPhone(memberSaveDto.getPhone())
                             .memberJoinDate(LocalDate.now())
                             .memberRole("USER")
